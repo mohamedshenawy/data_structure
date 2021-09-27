@@ -11,7 +11,7 @@ package data.structure;
  */
 class Array {
     private int[] items;
-    public int count;
+    private int count;
     
     
     public Array(int length){
