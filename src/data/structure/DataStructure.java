@@ -5,6 +5,10 @@
  */
 package data.structure;
 
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+
 /**
  *
  * @author shenawy
@@ -15,15 +19,15 @@ public class DataStructure {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Array numbers = new Array(3);
-        numbers.insert(4);
-        numbers.insert(5);
-        numbers.insert(6);
-        numbers.insert(7);
-        numbers.insert(8);
-        numbers.insert(20);
-        numbers.insertAt(10, 2);
-        numbers.print();
+        Linkedlist list = new Linkedlist();
+        list.addFirst(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.reverse();
+        System.out.println(Arrays.toString(list.toArray()));
+        System.out.println(list.getKthNodeFromEnd(1));
+        
+        
     }
     
 }
