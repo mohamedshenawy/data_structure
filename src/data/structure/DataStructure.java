@@ -2,24 +2,17 @@ package data.structure;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Queue;
+import java.util.Map;
+import java.util.Set;
 
 public class DataStructure {
 
     public static void main(String[] args) {
-            StackWithTwoQueues stack = new StackWithTwoQueues();
-            stack.push(10);
-            stack.push(20);
-            stack.push(30);
-            stack.push(40);
-            stack.push(50);
-            stack.push(60);
-            stack.push(70);
-            stack.pop();
-            stack.pop();    
-            stack.pop();    
-            System.out.println(stack);
-            System.out.println(stack.peek());
-            System.out.println(stack.size());
+        HashTableExercises obj = new HashTableExercises();
+        int [] v={1,7,5,9,2,12,3}; 
+        obj.countPairsWithDiff(v, 2);
     }
 }
