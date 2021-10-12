@@ -280,6 +280,22 @@ public class Tree {
     private  boolean isLeaf(Node node) {
     return node.leftChild == null && node.rightChild == null;
   }
+    
+    public boolean isBalanced(){
+        return isBalanced(root);
+    }
+    private boolean isBalanced(Node root){
+        if(root == null)
+            return true;
+        int balancedFactor = height(root.leftChild)-height(root.rightChild);
+        
+        return Math.abs(balancedFactor)<= 1 &&
+                isBalanced(root.leftChild)&&
+                isBalanced(root.rightChild);
+    }
+    
+    public boolean isPerfect(){
+        return size() == (Math.pow(2 , height()+1)-1); 
 
     
 }
