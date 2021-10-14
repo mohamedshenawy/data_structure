@@ -296,6 +296,7 @@ public class Tree {
     
     public boolean isPerfect(){
         return size() == (Math.pow(2 , height()+1)-1); 
+    }
 
     
 }
