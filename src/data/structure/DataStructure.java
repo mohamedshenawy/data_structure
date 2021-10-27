@@ -7,15 +7,16 @@ import java.util.List;
 public class DataStructure {
 
     public static void main(String[] args) {
-        Trie obj = new Trie();
-        obj.insert("car");
-        obj.insert("care");
-        obj.insert("card");
-        obj.insert("carefull");
-        obj.insert("egg");
-        List<String> word = obj.findWords("care");
-        System.out.println(word);
-        
+        Graph graph =new Graph();
+        graph.addNode("A");
+        graph.addNode("B");
+        graph.addNode("C");
+        graph.addNode("D");
+        graph.addEdge("A", "B");
+        graph.addEdge("B", "D");
+        graph.addEdge("D", "C");
+        graph.addEdge("A", "C");
+        graph.traverseBreadthFirst("A");
     }
     
 }
